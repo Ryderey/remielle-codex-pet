@@ -6,13 +6,17 @@
 
 <table>
   <tr>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
       <img src="./assets/readme/animations/running-left.gif" width="192" alt="小蕾米向左移动动态预览">
       <br><b>向左移动</b><br><sub><code>running-left</code></sub>
     </td>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
       <img src="./assets/readme/animations/idle.gif" width="192" alt="小蕾米待机动态预览">
       <br><b>待机</b><br><sub><code>idle</code> · 呼吸与眨眼</sub>
+    </td>
+    <td width="33%" align="center">
+      <img src="./assets/readme/animations/completion.gif" width="192" alt="小蕾米完成庆祝动态预览">
+      <br><b>完成庆祝</b><br><sub><code>jumping</code> · <code>smug.gif</code></sub>
     </td>
   </tr>
 </table>
