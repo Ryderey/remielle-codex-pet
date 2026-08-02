@@ -1,0 +1,162 @@
+{
+  "ok": true,
+  "reviewRequired": true,
+  "medianDiffPixels": 1637.0,
+  "warnings": [
+    "157.5->180 diff is a local outlier (6415 pixels vs neighbor average 1258)",
+    "157.5->180 center shift is high (13.0px)",
+    "157.5->180 sprite area ratio is high (1.25)",
+    "270->292.5 diff is a local outlier (1667 pixels vs neighbor average 1080)",
+    "315->337.5 center shift is high (8.1px)",
+    "337.5->000 diff is a local outlier (7734 pixels vs neighbor average 2984)",
+    "337.5->000 center shift is high (13.5px)",
+    "337.5->000 sprite area ratio is high (1.37)"
+  ],
+  "alphaHoles": [],
+  "pairs": [
+    {
+      "from": "000",
+      "to": "022.5",
+      "firstPixels": 24716,
+      "secondPixels": 24442,
+      "diffPixels": 1546,
+      "centerDelta": 0.0,
+      "areaRatio": 1.011210211930284
+    },
+    {
+      "from": "022.5",
+      "to": "045",
+      "firstPixels": 24442,
+      "secondPixels": 23964,
+      "diffPixels": 1654,
+      "centerDelta": 0.5,
+      "areaRatio": 1.0199465865464863
+    },
+    {
+      "from": "045",
+      "to": "067.5",
+      "firstPixels": 23964,
+      "secondPixels": 22965,
+      "diffPixels": 1953,
+      "centerDelta": 2.0,
+      "areaRatio": 1.0435009797517962
+    },
+    {
+      "from": "067.5",
+      "to": "090",
+      "firstPixels": 22965,
+      "secondPixels": 23381,
+      "diffPixels": 1620,
+      "centerDelta": 1.118033988749895,
+      "areaRatio": 1.0181145220988461
+    },
+    {
+      "from": "090",
+      "to": "112.5",
+      "firstPixels": 23381,
+      "secondPixels": 22995,
+      "diffPixels": 1480,
+      "centerDelta": 0.7071067811865476,
+      "areaRatio": 1.0167862578821483
+    },
+    {
+      "from": "112.5",
+      "to": "135",
+      "firstPixels": 22995,
+      "secondPixels": 22982,
+      "diffPixels": 1771,
+      "centerDelta": 1.118033988749895,
+      "areaRatio": 1.0005656600818031
+    },
+    {
+      "from": "135",
+      "to": "157.5",
+      "firstPixels": 22982,
+      "secondPixels": 22624,
+      "diffPixels": 1067,
+      "centerDelta": 1.0,
+      "areaRatio": 1.0158239038189534
+    },
+    {
+      "from": "157.5",
+      "to": "180",
+      "firstPixels": 22624,
+      "secondPixels": 18056,
+      "diffPixels": 6415,
+      "centerDelta": 13.038404810405298,
+      "areaRatio": 1.2529906956136465
+    },
+    {
+      "from": "180",
+      "to": "202.5",
+      "firstPixels": 18056,
+      "secondPixels": 18341,
+      "diffPixels": 1448,
+      "centerDelta": 1.118033988749895,
+      "areaRatio": 1.0157842268498005
+    },
+    {
+      "from": "202.5",
+      "to": "225",
+      "firstPixels": 18341,
+      "secondPixels": 18116,
+      "diffPixels": 1737,
+      "centerDelta": 1.0,
+      "areaRatio": 1.0124199602561272
+    },
+    {
+      "from": "225",
+      "to": "247.5",
+      "firstPixels": 18116,
+      "secondPixels": 18140,
+      "diffPixels": 965,
+      "centerDelta": 0.5,
+      "areaRatio": 1.0013247957606535
+    },
+    {
+      "from": "247.5",
+      "to": "270",
+      "firstPixels": 18140,
+      "secondPixels": 17971,
+      "diffPixels": 926,
+      "centerDelta": 0.0,
+      "areaRatio": 1.0094040398419677
+    },
+    {
+      "from": "270",
+      "to": "292.5",
+      "firstPixels": 17971,
+      "secondPixels": 17778,
+      "diffPixels": 1667,
+      "centerDelta": 0.5,
+      "areaRatio": 1.0108561142985713
+    },
+    {
+      "from": "292.5",
+      "to": "315",
+      "firstPixels": 17778,
+      "secondPixels": 17307,
+      "diffPixels": 1235,
+      "centerDelta": 2.0615528128088303,
+      "areaRatio": 1.0272144219102097
+    },
+    {
+      "from": "315",
+      "to": "337.5",
+      "firstPixels": 17307,
+      "secondPixels": 18001,
+      "diffPixels": 4421,
+      "centerDelta": 8.139410298049853,
+      "areaRatio": 1.040099381753048
+    },
+    {
+      "from": "337.5",
+      "to": "000",
+      "firstPixels": 18001,
+      "secondPixels": 24716,
+      "diffPixels": 7734,
+      "centerDelta": 13.509256086106296,
+      "areaRatio": 1.3730348313982557
+    }
+  ]
+}

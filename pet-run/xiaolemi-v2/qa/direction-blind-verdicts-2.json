@@ -1,0 +1,18 @@
+{
+  "pairs": [
+    {"pair":"horizontal-1","A":"screen-right","B":"screen-left","reason":"A face plane and nose tip lean right; B leans left."},
+    {"pair":"horizontal-2","A":"screen-right","B":"screen-left","reason":"A is right-facing 3/4 view; B is left-facing profile."},
+    {"pair":"horizontal-3","A":"screen-right","B":"screen-left","reason":"A nose/cheek points right; B profile points left."},
+    {"pair":"horizontal-4","A":"screen-right","B":"screen-left","reason":"A is turned right; B is turned left."},
+    {"pair":"horizontal-5","A":"screen-right","B":"screen-left","reason":"A rightward face plane; B leftward profile."},
+    {"pair":"horizontal-6","A":"screen-right","B":"screen-left","reason":"A head and nose point right; B points left."},
+    {"pair":"horizontal-7","A":"screen-right","B":"screen-left","reason":"A right-facing profile; B left-facing bowed profile."},
+    {"pair":"vertical-1","A":"down","B":"up","reason":"A is bowed/top-down; B has chin lifted and front face visible."},
+    {"pair":"vertical-2","A":"up","B":"down","reason":"A eyes sit higher with lifted face; B lids are lower."},
+    {"pair":"vertical-3","A":"up","B":"down","reason":"A more open, raised gaze; B slightly lowered eyelids."},
+    {"pair":"vertical-4","A":"up","B":"down","reason":"A open eyes and raised face; B half-closed/downcast."},
+    {"pair":"vertical-5","A":"up","B":"down","reason":"A lifted eye line; B bowed with drooped lids."},
+    {"pair":"vertical-6","A":"up","B":"down","reason":"A front/up gaze; B head bowed and eyes lowered."},
+    {"pair":"vertical-7","A":"up","B":"down","reason":"A eye line is raised; B is more downcast."}
+  ]
+}

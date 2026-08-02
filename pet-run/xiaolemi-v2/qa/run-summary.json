@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "run_dir": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2",
+  "spritesheet": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/final/spritesheet-extended.webp",
+  "validation": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/final/validation-extended.json",
+  "chroma_despill": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/chroma-despill-extended.json",
+  "contact_sheet": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/contact-sheet-extended.png",
+  "direction_sheet": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/look-directions.png",
+  "direction_semantics": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/direction-semantics.json",
+  "blind_direction_validation": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/direction-blind-validation.json",
+  "blind_review_resolution": null,
+  "continuity": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/look-continuity.json",
+  "review": "/Users/hana/Desktop/蕾米桌宠/pet-run/xiaolemi-v2/qa/review.json",
+  "package": "/Users/hana/.codex/pets/xiaolemi",
+  "animation_triggers": "/Users/hana/Desktop/蕾米桌宠/output/xiaolemi/animation-triggers.json",
+  "jumping_row_replacement": {
+    "native_state": "jumping",
+    "visual_semantics": "success-celebration",
+    "source": "/Users/hana/Desktop/蕾米桌宠/gif/smug.gif",
+    "frame_count": 5,
+    "source_frame_samples": [0, 15, 30, 45, 59]
+  },
+  "standard_row_replacements": {
+    "running": {
+      "source": "/Users/hana/Desktop/蕾米桌宠/gif/draw_continuous.gif",
+      "visual_semantics": "active-drawing",
+      "frame_count": 6,
+      "source_frame_samples": [0, 12, 25, 38, 51, 63]
+    },
+    "review": {
+      "source": "/Users/hana/Desktop/蕾米桌宠/gif/think.gif",
+      "visual_semantics": "focused-thinking",
+      "frame_count": 6,
+      "source_frame_samples": [0, 32, 64, 96, 128, 159]
+    }
+  },
+  "single_action_previews": "/Users/hana/Desktop/蕾米桌宠/表情包单张预览"
+}

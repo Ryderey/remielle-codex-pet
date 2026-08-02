@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "frames_root": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames",
+  "states": [
+    "running"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27796,
+          "bbox": [
+            5,
+            5,
+            187,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 384
+        },
+        {
+          "index": 1,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27482,
+          "bbox": [
+            6,
+            5,
+            185,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 348
+        },
+        {
+          "index": 2,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27956,
+          "bbox": [
+            5,
+            5,
+            187,
+            202
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 394
+        },
+        {
+          "index": 3,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27945,
+          "bbox": [
+            5,
+            5,
+            187,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 374
+        },
+        {
+          "index": 4,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27560,
+          "bbox": [
+            5,
+            5,
+            187,
+            202
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 389
+        },
+        {
+          "index": 5,
+          "file": "/Users/hana/Desktop/\u857e\u7c73\u684c\u5ba0/pet-run/xiaolemi-v2/qa/rows/running/frames/running/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27181,
+          "bbox": [
+            5,
+            7,
+            187,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 370
+        }
+      ]
+    }
+  ]
+}
