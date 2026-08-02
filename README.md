@@ -94,9 +94,11 @@
 
 ## 快速安装
 
-### 方式一：下载 Release（推荐）
+### macOS
 
-下载 [v1.0.0 安装包](https://github.com/HanaAyane/remielle-codex-pet/releases/download/v1.0.0/remielle-codex-pet-v1.0.0.zip)，然后在 macOS 终端执行：
+#### 从 Release 安装（推荐）
+
+下载 [v1.0.0 安装包](https://github.com/HanaAyane/remielle-codex-pet/releases/download/v1.0.0/remielle-codex-pet-v1.0.0.zip)，然后在终端执行：
 
 ```bash
 cd ~/Downloads
@@ -108,7 +110,7 @@ cp remielle-codex-pet/spritesheet.webp ~/.codex/pets/xiaolemi/
 
 如果 ZIP 不在 `~/Downloads`，请把 `cd` 改为实际下载目录。
 
-### 方式二：从仓库安装
+#### 从仓库安装
 
 适合需要查看动作映射、版权说明或参与开发的情况：
 
@@ -120,15 +122,57 @@ cp output/xiaolemi/pet.json ~/.codex/pets/xiaolemi/
 cp output/xiaolemi/spritesheet.webp ~/.codex/pets/xiaolemi/
 ```
 
-### 完成安装
-
-重新打开 Codex，或刷新桌宠列表，然后选择 **小蕾米**。
-
-可以用下面的命令检查两个必需文件是否已经安装：
+检查安装结果：
 
 ```bash
 ls -lh ~/.codex/pets/xiaolemi/pet.json ~/.codex/pets/xiaolemi/spritesheet.webp
 ```
+
+### Windows（PowerShell）
+
+#### 从 Release 安装（推荐）
+
+下载 [v1.0.0 安装包](https://github.com/HanaAyane/remielle-codex-pet/releases/download/v1.0.0/remielle-codex-pet-v1.0.0.zip)，在“下载”文件夹打开 PowerShell，执行：
+
+```powershell
+$downloadDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) "Downloads"
+Set-Location $downloadDir
+Expand-Archive -Path .\remielle-codex-pet-v1.0.0.zip -DestinationPath . -Force
+
+$petDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) ".codex\pets\xiaolemi"
+New-Item -ItemType Directory -Force -Path $petDir | Out-Null
+Copy-Item .\remielle-codex-pet\pet.json -Destination $petDir -Force
+Copy-Item .\remielle-codex-pet\spritesheet.webp -Destination $petDir -Force
+```
+
+如果 ZIP 不在“下载”文件夹，请修改 `$downloadDir` 的路径。
+
+#### 从仓库安装
+
+适合需要查看动作映射、版权说明或参与开发的情况：
+
+```powershell
+$downloadDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) "Downloads"
+Set-Location $downloadDir
+git clone https://github.com/HanaAyane/remielle-codex-pet.git
+Set-Location .\remielle-codex-pet
+
+$petDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) ".codex\pets\xiaolemi"
+New-Item -ItemType Directory -Force -Path $petDir | Out-Null
+Copy-Item .\output\xiaolemi\pet.json -Destination $petDir -Force
+Copy-Item .\output\xiaolemi\spritesheet.webp -Destination $petDir -Force
+```
+
+检查安装结果：
+
+```powershell
+$petDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) ".codex\pets\xiaolemi"
+Get-Item "$petDir\pet.json", "$petDir\spritesheet.webp"
+```
+
+### 完成安装
+
+重新打开 Codex，或刷新桌宠列表，然后选择 **小蕾米**。
 
 原生 Codex v2 安装只需要两个文件：
 
