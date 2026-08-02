@@ -2,6 +2,21 @@
   <img src="./assets/readme/showcase.png" width="100%" alt="小蕾米宣传图：展示待机、挥手、完成庆祝、工作中和检查中五个可爱动作">
 </p>
 
+<p align="center"><b>动态动作预览</b></p>
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/readme/animations/running-left.gif" width="192" alt="小蕾米向左移动动态预览">
+      <br><b>向左移动</b><br><sub><code>running-left</code></sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/readme/animations/idle.gif" width="192" alt="小蕾米待机动态预览">
+      <br><b>待机</b><br><sub><code>idle</code> · 呼吸与眨眼</sub>
+    </td>
+  </tr>
+</table>
+
 <p align="center">
   <a href="#动作图鉴">动作图鉴</a> ·
   <a href="#快速安装">快速安装</a> ·
