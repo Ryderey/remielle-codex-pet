@@ -75,25 +75,50 @@
 
 ## 快速安装
 
-下载仓库后，在 macOS 终端执行：
+### 方式一：下载 Release（推荐）
+
+下载 [v1.0.0 安装包](https://github.com/HanaAyane/remielle-codex-pet/releases/download/v1.0.0/remielle-codex-pet-v1.0.0.zip)，然后在 macOS 终端执行：
 
 ```bash
+cd ~/Downloads
+unzip -o remielle-codex-pet-v1.0.0.zip
+mkdir -p ~/.codex/pets/xiaolemi
+cp remielle-codex-pet/pet.json ~/.codex/pets/xiaolemi/
+cp remielle-codex-pet/spritesheet.webp ~/.codex/pets/xiaolemi/
+```
+
+如果 ZIP 不在 `~/Downloads`，请把 `cd` 改为实际下载目录。
+
+### 方式二：从仓库安装
+
+适合需要查看动作映射、版权说明或参与开发的情况：
+
+```bash
+git clone https://github.com/HanaAyane/remielle-codex-pet.git
+cd remielle-codex-pet
 mkdir -p ~/.codex/pets/xiaolemi
 cp output/xiaolemi/pet.json ~/.codex/pets/xiaolemi/
 cp output/xiaolemi/spritesheet.webp ~/.codex/pets/xiaolemi/
 ```
 
-然后重新打开 Codex，或刷新桌宠列表，选择 **小蕾米**。
+### 完成安装
 
-原生安装包只有两个必需文件：
+重新打开 Codex，或刷新桌宠列表，然后选择 **小蕾米**。
 
-```text
-output/xiaolemi/
-├── pet.json          # 名称、描述、v2 版本和精灵图路径
-└── spritesheet.webp  # 1536 × 2288，透明 RGBA，8 × 11 图集
+可以用下面的命令检查两个必需文件是否已经安装：
+
+```bash
+ls -lh ~/.codex/pets/xiaolemi/pet.json ~/.codex/pets/xiaolemi/spritesheet.webp
 ```
 
-`animation-triggers.json` 和 `ANIMATION-TRIGGERS.md` 是动作触发映射与说明文件，不属于 Codex v2 的硬性安装字段，但建议一并保留，方便其他运行器或集成层使用。
+原生 Codex v2 安装只需要两个文件：
+
+```text
+pet.json          # 名称、描述、v2 版本和精灵图路径
+spritesheet.webp  # 1536 × 2288，透明 RGBA，8 × 11 图集
+```
+
+`animation-triggers.json`、`ANIMATION-TRIGGERS.md` 和 `NOTICE.md` 是动作映射、使用说明与版权声明文件，不属于 Codex v2 的硬性安装字段，但建议在源码目录中一并保留。
 
 ## 动作语义与触发
 
