@@ -128,6 +128,22 @@ cp output/xiaolemi/spritesheet.webp ~/.codex/pets/xiaolemi/
 ls -lh ~/.codex/pets/xiaolemi/pet.json ~/.codex/pets/xiaolemi/spritesheet.webp
 ```
 
+#### 手动拖拽安装
+
+1. 解压 `remielle-codex-pet-v1.0.0.zip`。
+2. 在 Finder 中按 `⌘ + ⇧ + G`，打开 `~/.codex/pets/xiaolemi/`。
+3. 将解压后的 `remielle-codex-pet` 文件夹中的 `pet.json` 和 `spritesheet.webp` 拖入该目录。
+
+如果目标目录不存在，可以先在终端执行 `mkdir -p ~/.codex/pets/xiaolemi`，再用 Finder 打开。最终目录应为：
+
+```text
+~/.codex/pets/xiaolemi/
+├── pet.json
+└── spritesheet.webp
+```
+
+不要把外层文件夹直接作为最终目录名；Codex 原生安装目录应使用 `xiaolemi`。
+
 ### Windows（PowerShell）
 
 #### 从 Release 安装（推荐）
@@ -169,6 +185,22 @@ Copy-Item .\output\xiaolemi\spritesheet.webp -Destination $petDir -Force
 $petDir = Join-Path ([Environment]::GetFolderPath("UserProfile")) ".codex\pets\xiaolemi"
 Get-Item "$petDir\pet.json", "$petDir\spritesheet.webp"
 ```
+
+#### 手动拖拽安装
+
+1. 解压 `remielle-codex-pet-v1.0.0.zip`。
+2. 在资源管理器地址栏输入 `%USERPROFILE%\.codex\pets\xiaolemi\` 并回车。
+3. 将解压后的 `remielle-codex-pet` 文件夹中的 `pet.json` 和 `spritesheet.webp` 拖入该目录。
+
+如果目标目录不存在，请先创建以下文件夹：
+
+```text
+C:\Users\你的用户名\.codex\pets\xiaolemi\
+├── pet.json
+└── spritesheet.webp
+```
+
+`.codex` 是隐藏目录，但可以直接在资源管理器地址栏输入路径访问。不要把外层文件夹直接作为最终目录名；Codex 原生安装目录应使用 `xiaolemi`。
 
 ### 完成安装
 
