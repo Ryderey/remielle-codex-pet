@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="showcase-title showcase-desc">
+  <title id="showcase-title">小蕾米可爱动作宣传图</title>
+  <desc id="showcase-desc">展示小蕾米待机、挥手、完成庆祝、工作中和检查中的五个可爱动作。</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#302b55"/>
+      <stop offset="1" stop-color="#1e203d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf6"/>
+      <stop offset="1" stop-color="#ffeef1"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#252344" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="560" rx="32" fill="#fff7f3"/>
+  <rect x="32" y="32" width="1136" height="496" rx="30" fill="url(#background)"/>
+  <circle cx="1120" cy="42" r="170" fill="#ff9fba" opacity=".12"/>
+  <path d="M32 438c154-68 252 25 390-2 150-30 242-53 350-12 126 47 230 23 396-25v129H32Z" fill="#171a35" opacity=".34"/>
+  <path d="M92 74c58-28 118-25 174 5" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="2" stroke-linecap="round"/>
+
+  <g transform="translate(76 72)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB',sans-serif">
+    <text x="0" y="20" fill="#9bd9ca" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" font-weight="700" letter-spacing="2">CODEX NATIVE PET · V2</text>
+    <rect x="0" y="45" width="66" height="5" rx="2.5" fill="#ff9fba"/>
+    <text x="0" y="137" fill="#fff4e5" font-size="78" font-weight="800" letter-spacing="2">小蕾米</text>
+    <text x="0" y="181" fill="#ffd6df" font-size="26" font-weight="700">工作中，也要可可爱爱。</text>
+    <text x="0" y="224" fill="#c9c4ed" font-size="19">把等待、思考与完成，变成桌面上</text>
+    <text x="0" y="254" fill="#c9c4ed" font-size="19">看得见的反馈。</text>
+
+    <g transform="translate(0 302)">
+      <rect width="132" height="40" rx="20" fill="#ff9fba"/>
+      <text x="66" y="26" text-anchor="middle" fill="#272449" font-size="16" font-weight="800">9 个动作</text>
+      <rect x="144" width="140" height="40" rx="20" fill="#c9c4ed"/>
+      <text x="214" y="26" text-anchor="middle" fill="#272449" font-size="16" font-weight="800">16 向视线</text>
+      <rect y="54" width="166" height="40" rx="20" fill="#9bd9ca"/>
+      <text x="83" y="80" text-anchor="middle" fill="#272449" font-size="16" font-weight="800">透明 WebP 图集</text>
+    </g>
+
+    <g transform="translate(0 432)">
+      <path d="M0 0h15" stroke="#ff9fba" stroke-width="3" stroke-linecap="round"/>
+      <text x="27" y="5" fill="#fff4e5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15">xiaolemi / your tiny desktop companion</text>
+    </g>
+  </g>
+
+  <g transform="translate(460 62)">
+    <rect width="670" height="436" rx="26" fill="url(#panel)"/>
+    <text x="28" y="37" fill="#272449" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB',sans-serif" font-size="20" font-weight="800">今天也在认真陪你写代码</text>
+    <text x="28" y="61" fill="#8d8298" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13">idle · waving · success · working · reviewing</text>
+
+    <g transform="translate(24 78)" filter="url(#card-shadow)">
+      <rect width="186" height="166" rx="18" fill="#ffffff"/>
+      <rect x="1" y="1" width="184" height="164" rx="17" fill="none" stroke="#f2d9df"/>
+      <image xlink:href="../../../表情包单张预览/01-待机-idle.png" x="20" y="5" width="146" height="146" preserveAspectRatio="xMidYMid meet"/>
+      <circle cx="158" cy="20" r="5" fill="#c9c4ed"/>
+      <text x="18" y="158" fill="#272449" font-size="15" font-weight="800">安静待机</text>
+    </g>
+
+    <g transform="translate(242 78)" filter="url(#card-shadow)">
+      <rect width="186" height="166" rx="18" fill="#ffffff"/>
+      <rect x="1" y="1" width="184" height="164" rx="17" fill="none" stroke="#f2d9df"/>
+      <image xlink:href="../../../表情包单张预览/04-挥手-waving.png" x="20" y="5" width="146" height="146" preserveAspectRatio="xMidYMid meet"/>
+      <circle cx="158" cy="20" r="5" fill="#9bd9ca"/>
+      <text x="18" y="158" fill="#272449" font-size="15" font-weight="800">看到你啦</text>
+    </g>
+
+    <g transform="translate(460 78)" filter="url(#card-shadow)">
+      <rect width="186" height="166" rx="18" fill="#ffffff"/>
+      <rect x="1" y="1" width="184" height="164" rx="17" fill="none" stroke="#f2d9df"/>
+      <image xlink:href="../../../表情包单张预览/05-完成庆祝-smug.png" x="20" y="5" width="146" height="146" preserveAspectRatio="xMidYMid meet"/>
+      <circle cx="158" cy="20" r="5" fill="#ff9fba"/>
+      <text x="18" y="158" fill="#272449" font-size="15" font-weight="800">完成啦！</text>
+    </g>
+
+    <g transform="translate(133 260)" filter="url(#card-shadow)">
+      <rect width="186" height="166" rx="18" fill="#ffffff"/>
+      <rect x="1" y="1" width="184" height="164" rx="17" fill="none" stroke="#f2d9df"/>
+      <image xlink:href="../../../表情包单张预览/08-工作中-draw-continuous.png" x="20" y="5" width="146" height="146" preserveAspectRatio="xMidYMid meet"/>
+      <circle cx="158" cy="20" r="5" fill="#9bd9ca"/>
+      <text x="18" y="158" fill="#272449" font-size="15" font-weight="800">认真工作中</text>
+    </g>
+
+    <g transform="translate(351 260)" filter="url(#card-shadow)">
+      <rect width="186" height="166" rx="18" fill="#ffffff"/>
+      <rect x="1" y="1" width="184" height="164" rx="17" fill="none" stroke="#f2d9df"/>
+      <image xlink:href="../../../表情包单张预览/09-检查中-think.png" x="20" y="5" width="146" height="146" preserveAspectRatio="xMidYMid meet"/>
+      <circle cx="158" cy="20" r="5" fill="#c9c4ed"/>
+      <text x="18" y="158" fill="#272449" font-size="15" font-weight="800">检查一下</text>
+    </g>
+  </g>
+</svg>

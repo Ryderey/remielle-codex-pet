@@ -1,0 +1,145 @@
+<p align="center">
+  <img src="./assets/readme/showcase.png" width="100%" alt="小蕾米宣传图：展示待机、挥手、完成庆祝、工作中和检查中五个可爱动作">
+</p>
+
+<p align="center">
+  <a href="#动作图鉴">动作图鉴</a> ·
+  <a href="#快速安装">快速安装</a> ·
+  <a href="#项目结构">项目结构</a> ·
+  <a href="#已知限制">已知限制</a>
+</p>
+
+<p align="center">
+  <sub>一只粉发白翼、抱着画板和画笔的日系 Q 版小天使桌宠。</sub>
+</p>
+
+小蕾米是一套可直接安装的 Codex 原生 v2 桌宠资源包：保留原始 GIF 的动作语义，整理成透明精灵图集，并把“工作中、检查中、完成庆祝”等状态映射成更有个性的桌面反馈。
+
+## 动作图鉴
+
+小蕾米的每个动作都由真实 GIF 素材整理而来，并输出为 `192 × 208` 的透明 PNG 单帧预览。先看动作，再看安装包：
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <img src="./表情包单张预览/01-待机-idle.png" width="150" alt="小蕾米待机动作">
+      <br><b>待机</b><br><sub><code>idle</code> · 呼吸与眨眼</sub>
+    </td>
+    <td width="33%" align="center">
+      <img src="./表情包单张预览/02-向右移动-running-right.png" width="150" alt="小蕾米向右移动动作">
+      <br><b>向右移动</b><br><sub><code>running-right</code></sub>
+    </td>
+    <td width="33%" align="center">
+      <img src="./表情包单张预览/03-向左移动-running-left.png" width="150" alt="小蕾米向左移动动作">
+      <br><b>向左移动</b><br><sub><code>running-left</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./表情包单张预览/04-挥手-waving.png" width="150" alt="小蕾米挥手动作">
+      <br><b>挥手</b><br><sub><code>waving</code> · 互动反馈</sub>
+    </td>
+    <td align="center">
+      <img src="./表情包单张预览/05-完成庆祝-smug.png" width="150" alt="小蕾米完成庆祝动作">
+      <br><b>完成庆祝</b><br><sub><code>jumping</code> · 视觉素材为 <code>smug.gif</code></sub>
+    </td>
+    <td align="center">
+      <img src="./表情包单张预览/06-失败-failed.png" width="150" alt="小蕾米失败动作">
+      <br><b>失败</b><br><sub><code>failed</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./表情包单张预览/07-等待确认-waiting.png" width="150" alt="小蕾米等待确认动作">
+      <br><b>等待确认</b><br><sub><code>waiting</code></sub>
+    </td>
+    <td align="center">
+      <img src="./表情包单张预览/08-工作中-draw-continuous.png" width="150" alt="小蕾米工作中动作">
+      <br><b>工作中</b><br><sub><code>running</code> · 视觉素材为 <code>draw_continuous.gif</code></sub>
+    </td>
+    <td align="center">
+      <img src="./表情包单张预览/09-检查中-think.png" width="150" alt="小蕾米检查中动作">
+      <br><b>检查中</b><br><sub><code>review</code> · 视觉素材为 <code>think.gif</code></sub>
+    </td>
+  </tr>
+</table>
+
+<details>
+  <summary><b>查看完整 v2 精灵图集</b></summary>
+  <br>
+  <p align="center">
+    <img src="./output/xiaolemi/spritesheet.webp" width="620" alt="小蕾米 1536×2288 的 8×11 Codex v2 精灵图集">
+  </p>
+  <p align="center"><sub>每格为 192 × 208；第 0–8 行是标准动作，第 9–10 行是 16 向视线。</sub></p>
+</details>
+
+## 快速安装
+
+下载仓库后，在 macOS 终端执行：
+
+```bash
+mkdir -p ~/.codex/pets/xiaolemi
+cp output/xiaolemi/pet.json ~/.codex/pets/xiaolemi/
+cp output/xiaolemi/spritesheet.webp ~/.codex/pets/xiaolemi/
+```
+
+然后重新打开 Codex，或刷新桌宠列表，选择 **小蕾米**。
+
+原生安装包只有两个必需文件：
+
+```text
+output/xiaolemi/
+├── pet.json          # 名称、描述、v2 版本和精灵图路径
+└── spritesheet.webp  # 1536 × 2288，透明 RGBA，8 × 11 图集
+```
+
+`animation-triggers.json` 和 `ANIMATION-TRIGGERS.md` 是动作触发映射与说明文件，不属于 Codex v2 的硬性安装字段，但建议一并保留，方便其他运行器或集成层使用。
+
+## 动作语义与触发
+
+| 原生状态 | 小蕾米语义 | 当前素材 / 典型使用 |
+| --- | --- | --- |
+| `idle` | 待机 | `idle.gif` |
+| `running-right` | 向右移动 | 移动反馈 |
+| `running-left` | 向左移动 | 移动反馈 |
+| `waving` | 挥手 | 启动、鼠标移入、点击互动 |
+| `jumping` | 完成庆祝 | `smug.gif`；任务完成或互动成功 |
+| `failed` | 失败 | 任务失败 |
+| `waiting` | 等待确认 | 需要用户输入或审批 |
+| `running` | 工作中 | `draw_continuous.gif` |
+| `review` | 检查中 | `think.gif` |
+
+## 16 向视线
+
+v2 图集额外包含 16 个按顺时针排列的视线方向：
+
+```text
+000  022.5  045  067.5  090  112.5  135  157.5
+180  202.5  225  247.5  270  292.5  315  337.5
+```
+
+这些方向素材已经打包进 `spritesheet.webp`，可供支持视线方向的运行器使用。当前仓库本身是桌宠素材包，不包含鼠标监听、任务状态监听或通知监听程序；`animation-triggers.json` 是声明式映射，不会单独生成事件监听能力。
+
+## 项目结构
+
+```text
+小蕾米桌宠/
+├── output/xiaolemi/        # 推荐发布与安装的原生桌宠包
+├── gif/                    # 原始动作 GIF 素材
+├── 表情包单张预览/          # 9 个动作的透明 PNG 单帧预览
+├── assets/readme/          # README 的宣传图与可编辑排版源文件
+└── .gitignore              # 排除本地生成工作区与系统文件
+```
+
+本地生成与 QA 工作区 `pet-run/` 不纳入公开发行包。
+
+## 已知限制
+
+- `jumping` 是 Codex 原生状态名；小蕾米实际显示为 `smug` 完成庆祝动作。
+- `running` 在小蕾米这里表达“工作中”，不是奔跑；实际使用 `draw_continuous.gif`。
+- 16 向视线是否实际跟随鼠标，取决于当前 Codex 运行器是否启用该能力。
+- 公开发布原始 GIF 前，请确认你拥有相应的公开和再分发权利。
+
+## 许可
+
+当前仓库尚未附带 `LICENSE` 文件。公开发布前，请根据原始角色与 GIF 素材的授权情况补充合适的开源许可证。
