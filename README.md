@@ -94,6 +94,27 @@
 
 ## 快速安装
 
+### Agent 安装（推荐）
+
+如果你使用的 Agent 具备网络访问和本地文件读写权限，可以直接复制下面的提示词，让 Agent 自动完成安装。请先确认你已经允许该 Agent 操作本机文件：
+
+```text
+请帮我在这台电脑上安装 GitHub 仓库 https://github.com/HanaAyane/remielle-codex-pet 的 Codex 原生 v2 桌宠“小蕾米”。
+
+请严格执行以下步骤：
+1. 识别当前操作系统是 macOS 还是 Windows。
+2. 从这个 Release 地址下载并解压安装包：
+   https://github.com/HanaAyane/remielle-codex-pet/releases/download/v1.0.0/remielle-codex-pet-v1.0.0.zip
+3. 找到解压目录中的 pet.json 和 spritesheet.webp，不要把外层 remielle-codex-pet 文件夹直接当作最终安装目录。
+4. 创建 Codex 原生桌宠目录：
+   - macOS：~/.codex/pets/xiaolemi/
+   - Windows：%USERPROFILE%\.codex\pets\xiaolemi\
+5. 只将 pet.json 和 spritesheet.webp 复制到上述 xiaolemi 目录中；不要删除或修改其他桌宠文件。
+6. 检查 pet.json 中的 id 是否为 xiaolemi，并确认 spritesheet.webp 存在且可读取。
+7. 如果目标目录中已经存在同名文件，先告诉我文件已存在并询问是否覆盖，不要擅自删除其他文件。
+8. 最后告诉我实际安装路径、检查结果，以及是否需要重新打开或刷新 Codex 才能看到“小蕾米”。
+```
+
 ### macOS
 
 #### 从 Release 安装（推荐）
