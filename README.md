@@ -80,7 +80,7 @@
 </table>
 
 <details>
-  <summary><b>查看完整 v2 精灵图集</b></summary>
+  <summary><b>查看完整动作图集</b></summary>
   <br>
   <p align="center">
     <img src="./output/xiaolemi/spritesheet.webp" width="620" alt="小蕾米 1536×2288 的 8×11 Codex v2 精灵图集">
@@ -171,7 +171,6 @@ v2 图集额外包含 16 个按顺时针排列的视线方向：
 └── .gitignore              # 排除本地生成工作区与系统文件
 ```
 
-本地生成与 QA 工作区 `pet-run/` 不纳入公开发行包。
 
 ## 已知限制
 
