@@ -16,7 +16,7 @@
     </td>
     <td width="33%" align="center">
       <img src="./assets/readme/animations/completion.gif" width="192" alt="小蕾米完成庆祝动态预览">
-      <br><b>完成庆祝</b><br><sub><code>jumping</code> · <code>smug.gif</code></sub>
+      <br><b>完成庆祝</b><br><sub><code>jumping</code> · <code>gif/5.gif</code></sub>
     </td>
   </tr>
 </table>
@@ -60,7 +60,7 @@
     </td>
     <td align="center">
       <img src="./表情包单张预览/05-完成庆祝-smug.png" width="150" alt="小蕾米完成庆祝动作">
-      <br><b>完成庆祝</b><br><sub><code>jumping</code> · 视觉素材为 <code>smug.gif</code></sub>
+      <br><b>完成庆祝</b><br><sub><code>jumping</code> · 视觉素材为 <code>gif/5.gif</code></sub>
     </td>
     <td align="center">
       <img src="./表情包单张预览/06-失败-failed.png" width="150" alt="小蕾米失败动作">
@@ -74,11 +74,11 @@
     </td>
     <td align="center">
       <img src="./表情包单张预览/08-工作中-draw-continuous.png" width="150" alt="小蕾米工作中动作">
-      <br><b>工作中</b><br><sub><code>running</code> · 视觉素材为 <code>draw_continuous.gif</code></sub>
+      <br><b>工作中</b><br><sub><code>running</code> · 视觉素材为 <code>gif/4.gif</code></sub>
     </td>
     <td align="center">
       <img src="./表情包单张预览/09-检查中-think.png" width="150" alt="小蕾米检查中动作">
-      <br><b>检查中</b><br><sub><code>review</code> · 视觉素材为 <code>think.gif</code></sub>
+      <br><b>检查中</b><br><sub><code>review</code> · 视觉素材为 <code>gif/7.gif</code></sub>
     </td>
   </tr>
 </table>
@@ -240,15 +240,27 @@ spritesheet.webp  # 1536 × 2288，透明 RGBA，8 × 11 图集
 
 | 原生状态 | 小蕾米语义 | 当前素材 / 典型使用 |
 | --- | --- | --- |
-| `idle` | 待机 | `idle.gif` |
+| `idle` | 待机 | `gif/1.gif` |
 | `running-right` | 向右移动 | 移动反馈 |
 | `running-left` | 向左移动 | 移动反馈 |
 | `waving` | 挥手 | 启动、鼠标移入、点击互动 |
-| `jumping` | 完成庆祝 | `smug.gif`；任务完成或互动成功 |
+| `jumping` | 完成庆祝 | `gif/5.gif`；任务完成或互动成功 |
 | `failed` | 失败 | 任务失败 |
 | `waiting` | 等待确认 | 需要用户输入或审批 |
-| `running` | 工作中 | `draw_continuous.gif` |
-| `review` | 检查中 | `think.gif` |
+| `running` | 工作中 | `gif/4.gif` |
+| `review` | 检查中 | `gif/7.gif` |
+
+`gif/` 中的原始动作 GIF 按以下顺序编号：
+
+| 文件 | 动作标识 |
+| --- | --- |
+| `gif/1.gif` | `idle` |
+| `gif/2.gif` | `expect` |
+| `gif/3.gif` | `pen_idle` |
+| `gif/4.gif` | `draw_continuous` |
+| `gif/5.gif` | `smug` |
+| `gif/6.gif` | `draw_intermittent` |
+| `gif/7.gif` | `think` |
 
 ## 16 向视线
 
@@ -268,7 +280,7 @@ v2 图集额外包含 16 个按顺时针排列的视线方向：
 ├── ASSET-USAGE.md         # 非商业署名使用说明
 ├── NOTICE.md              # 第三方来源与版权边界
 ├── output/xiaolemi/        # 推荐发布与安装的原生桌宠包
-├── gif/                    # 原始动作 GIF 素材
+├── gif/                    # 原始动作 GIF 素材（按 1–7 编号）
 ├── 表情包单张预览/          # 9 个动作的透明 PNG 单帧预览
 ├── assets/readme/          # README 的宣传图与可编辑排版源文件
 └── .gitignore              # 排除本地生成工作区与系统文件
@@ -278,7 +290,7 @@ v2 图集额外包含 16 个按顺时针排列的视线方向：
 ## 已知限制
 
 - `jumping` 是 Codex 原生状态名；小蕾米实际显示为 `smug` 完成庆祝动作。
-- `running` 在小蕾米这里表达“工作中”，不是奔跑；实际使用 `draw_continuous.gif`。
+- `running` 在小蕾米这里表达“工作中”，不是奔跑；实际使用 `gif/4.gif`。
 - 16 向视线是否实际跟随鼠标，取决于当前 Codex 运行器是否启用该能力。
 - 公开发布原始 GIF 前，请确认你拥有相应的公开和再分发权利。
 

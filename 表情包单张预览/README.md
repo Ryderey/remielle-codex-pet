@@ -4,8 +4,8 @@
 
 其中：
 
-- `完成庆祝-smug` 使用用户提供的 `smug.gif`。
-- `工作中-draw-continuous` 使用用户提供的 `draw_continuous.gif`。
-- `检查中-think` 使用用户提供的 `think.gif`。
+- `完成庆祝-smug` 使用 `../gif/5.gif`。
+- `工作中-draw-continuous` 使用 `../gif/4.gif`。
+- `检查中-think` 使用 `../gif/7.gif`。
 
 文件名中的英文状态名对应 Codex v2 图集状态；中文名便于挑选素材。
