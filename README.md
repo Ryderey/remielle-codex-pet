@@ -112,7 +112,17 @@
 5. 只将 pet.json 和 spritesheet.webp 复制到上述 xiaolemi 目录中；不要删除或修改其他桌宠文件。
 6. 检查 pet.json 中的 id 是否为 xiaolemi，并确认 spritesheet.webp 存在且可读取。
 7. 如果目标目录中已经存在同名文件，先告诉我文件已存在并询问是否覆盖，不要擅自删除其他文件。
-8. 最后告诉我实际安装路径、检查结果，以及是否需要重新打开或刷新 Codex 才能看到“小蕾米”。
+8. 最后告诉我实际安装路径、文件检查结果，并提醒我重新打开 Codex，前往“设置 → Pets”刷新桌宠列表后选择“小蕾米”。
+9. 如果系统是 Windows，且刷新后仍然看不到“小蕾米”，请先检查 Codex Desktop 是否正在使用 WSL 后端。当前 Codex 在 Windows + WSL 后端下可能无法发现或加载已经正确安装的自定义桌宠：
+   https://github.com/openai/codex/issues/20730
+
+   遇到这个问题时：
+   - 不要修改 pet.json；
+   - 不要把桌宠转换为 v1；
+   - 不要重新缩放或替换 spritesheet.webp；
+   - 不要擅自修改 Codex 的后端设置。
+
+   请先说明：临时切换到 Windows 原生后端可能影响依赖 WSL 的工作流，并询问我是否切换。只有得到确认后，才将 Codex 任务执行后端切换为 Windows 原生模式，然后从系统托盘完整退出 Codex、重新启动并刷新桌宠列表。集成终端仍可继续使用 WSL。
 ```
 
 ### macOS
@@ -223,9 +233,40 @@ C:\Users\你的用户名\.codex\pets\xiaolemi\
 
 `.codex` 是隐藏目录，但可以直接在资源管理器地址栏输入路径访问。不要把外层文件夹直接作为最终目录名；Codex 原生安装目录应使用 `xiaolemi`。
 
+<a id="windows-wsl-custom-pet"></a>
+
+#### Windows + WSL 后端兼容性提示
+
+> [!WARNING]
+> Windows 上的 Codex Desktop 启用 WSL 后端时，可能无法发现或加载已经正确安装的自定义桌宠。该问题正在 Codex 上游跟踪：[openai/codex#20730](https://github.com/openai/codex/issues/20730)；本仓库的复现记录见 [Issue #1](https://github.com/HanaAyane/remielle-codex-pet/issues/1)。
+
+如果以下文件已经正确安装：
+
+```text
+C:\Users\你的用户名\.codex\pets\xiaolemi\
+├── pet.json
+└── spritesheet.webp
+```
+
+但在 Codex 的“设置 → Pets”中刷新后仍然看不到“小蕾米”，请按以下步骤排查：
+
+1. 确认 `pet.json` 和 `spritesheet.webp` 位于同一个 `xiaolemi` 目录中。
+2. 确认 `pet.json` 中的 `id` 为 `xiaolemi`。
+3. 在 Codex 设置中，将任务执行后端从 WSL 临时切换为 Windows 原生模式。
+4. 从 Windows 系统托盘完整退出 Codex；只关闭窗口可能不会结束后台进程。
+5. 重新启动 Codex，前往“设置 → Pets”，点击刷新并选择“小蕾米”。
+
+只需要切换 Codex 的任务执行后端；集成终端仍可继续使用 WSL。
+
+这个临时方案会让 Codex 任务改在 Windows 原生环境中运行，可能影响依赖 WSL、Linux 工具链或 Linux 路径的工作流。上游问题修复后，可以重新启用 WSL 后端。
+
+该兼容性问题不代表“小蕾米”的资源包格式无效。请不要为了解决它而将资源转换为 v1、修改 `pet.json`，或重新生成 `spritesheet.webp`。
+
 ### 完成安装
 
-重新打开 Codex，或刷新桌宠列表，然后选择 **小蕾米**。
+重新打开 Codex，前往“设置 → Pets”，刷新桌宠列表，然后选择 **小蕾米**。
+
+如果你使用 Windows，并且正确安装后仍然看不到“小蕾米”，请先查看上面的 [Windows + WSL 后端兼容性提示](#windows-wsl-custom-pet)，不要直接修改或转换桌宠资源。
 
 原生 Codex v2 安装只需要两个文件：
 
@@ -289,6 +330,7 @@ v2 图集额外包含 16 个按顺时针排列的视线方向：
 
 ## 已知限制
 
+- Windows 启用 WSL 后端时，Codex Desktop 可能无法发现或加载正确安装的自定义桌宠；这是正在跟踪的上游兼容性问题，详见 [Windows + WSL 后端兼容性提示](#windows-wsl-custom-pet)。
 - `jumping` 是 Codex 原生状态名；小蕾米实际显示为 `smug` 完成庆祝动作。
 - `running` 在小蕾米这里表达“工作中”，不是奔跑；实际使用 `gif/4.gif`。
 - 16 向视线是否实际跟随鼠标，取决于当前 Codex 运行器是否启用该能力。
